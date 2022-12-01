@@ -1,0 +1,10 @@
+Package: space.detrimental.sidestatus
+Name: SideStatus
+Version: 0.0.4
+Architecture: iphoneos-arm
+Description: A small tweak hoping to turn you status to the side(It may or may not do that depending on if I'm far enough)
+Maintainer: Astropengu
+Author: Astropengu
+Icon: Icon.png
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

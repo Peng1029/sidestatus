@@ -1,0 +1,25 @@
+#!/bin/sh
+if ! [ -z "$CYDIA" ]; then
+    read -r fd ver <<EOT
+$CYDIA
+EOT
+    if [ "$ver" -ge 1 ]; then
+        echo "finish:restart" >&$fd
+    fi
+elif ! [ -z "$ZEBRA" ]; then
+    read -r fd ver <<EOT
+$ZEBRA
+EOT
+    if [ "$ver" -ge 1 ]; then
+        echo "finish:restart" >&$fd
+    fi
+elif ! [ -z "$SILEO" ]; then
+read -r fd ver <<EOT
+    $SILEO
+EOT
+    if [ "$ver" -ge 1 ]; then
+        echo "finish:restart" >&$fd
+    fi
+else
+    echo "Please Respring your phone"
+fi
